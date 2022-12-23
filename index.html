@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url(/photos/Offense\ possition\ 3.png);
+            background-repeat: no-repeat;
+        }
+
+        .offenseOptions {
+            display: inline;
+        }
+
+        .defenseOptions {
+            display: none;
+        }
+
+        #continueButton {
+            display: none;
+        }
+    </style>
+    <title>Role Playing Soccer Game</title>
+</head>
+<body>
+
+    <div id="scoreBoard" style="background-color: rgb(0, 82, 31); width: 200px; border-radius: 10px; height: 150px">
+        <p style="font-family: 'Kanit'; font-size: 20px; color: white; text-align: center;">Your Score: <span id="myScore"></span> </p>
+        <p style="font-family: 'Kanit'; font-size: 20px; color: white; text-align: center;">CPU Score: <span id="cpuScore"></span> </p>
+        <p style="font-family: 'Kanit'; font-size: 20px; color: white; text-align: center;">Ball Position: <span id="ballPosition"></span></p>
+    </div>
+    <p id="actionLog" style="position: relative; text-align: center; top: -180px; font-size: 20px; font-family: 'Kanit'; color: blue;"></p>
+    <div id="continueButton" style="width: 300px; height: 100px; border-style: solid; border-color: rgb(0, 0, 0); border-width: 10px; border-radius: 10px; position:absolute; top: 500px; left: 500px;">
+        <p style="text-align: center; font-size: 30px; font-family: 'Kanit'; font-weight: bold;">Continue</p>
+    </div>
+    <div id="images">
+        <div class="offenseOptions" id="shoot" style="width: 300px; height: 100px; border-style: solid; border-color: rgb(0, 255, 76); border-width: 10px; border-radius: 10px; position:absolute; top: 500px; left: 100px;">
+            <p style="text-align: center; font-size: 30px; font-family: 'Kanit'; font-weight: bold;">Shoot</p>
+        </div>
+        <div class="offenseOptions" id="pass" style="width: 300px; height: 100px; border-style: solid; border-color: rgb(0, 255, 76); border-width: 10px; border-radius: 10px; position:absolute; top: 500px; left: 500px;">
+            <p style="text-align: center; font-size: 30px; font-family: 'Kanit'; font-weight: bold;">Pass</p>
+        </div>
+        <div class="offenseOptions" id="dribbleMove" style="width: 300px; height: 100px; border-style: solid; border-color: rgb(0, 255, 76); border-width: 10px; border-radius: 10px; position:absolute; top: 500px; left: 900px;">
+            <p style="text-align: center; font-size: 30px; font-family: 'Kanit'; font-weight: bold;">Dribble Move</p>
+        </div>
+
+ <!-- --- --------------------DEFENSE OPTIONS-----------------------------------------------------------> 
+        <div class="defenseOptions" id="interceptPass" style="width: 300px; height: 100px; border-style: solid; border-color: rgb(255, 51, 0); border-width: 10px; border-radius: 10px; position:absolute; top: 500px; left: 300px;">
+            <p style="text-align: center; font-size: 30px; font-family: 'Kanit'; font-weight: bold;">Intercept Pass</p>
+        </div>
+        <div class="defenseOptions" id="tackle" style="width: 300px; height: 100px; border-style: solid; border-color: rgb(255, 51, 0); border-width: 10px; border-radius: 10px; position:absolute; top: 500px; left: 750px;">
+            <p style="text-align: center; font-size: 30px; font-family: 'Kanit'; font-weight: bold;">Tackle</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
